@@ -1,0 +1,35 @@
+%button {
+    border: none;
+    background-color: #ff2600;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        @include laptop {
+            background-color: #c21e02;
+        }
+    }
+}
+
+%header-section {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+
+    @include doubleColumns {
+        font-size: 30px;
+    }
+
+    @include laptop {
+        font-size: 36px;
+    }
+}
+
+%wrapper-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}

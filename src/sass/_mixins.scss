@@ -11,6 +11,12 @@
     }
 }
 
+@mixin doubleColumns {
+    @media screen and (min-width: $breakpointDoubleColumns) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (min-width: $breakpointTablet) {
         @content;
