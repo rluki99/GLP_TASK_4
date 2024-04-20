@@ -1,15 +1,17 @@
+@import './variables';
+
 %button {
     border: none;
-    background-color: #ff2600;
-    color: #ffffff;
-    padding: 10px 20px;
     border-radius: 5px;
+    background-color: $button;
+    color: $white;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 
     &:hover {
         @include laptop {
-            background-color: #c21e02;
+            background-color: $buttonHover;
         }
     }
 }
